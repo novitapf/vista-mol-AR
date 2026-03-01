@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+
+<a-scene embedded arjs>
+
+<a-marker preset="hiro">
+
+<!-- Atom pusat -->
+<a-sphere color="black" radius="0.3"></a-sphere>
+
+<!-- 4 atom H (Tetrahedral) -->
+<a-sphere position="1 1 0" color="white" radius="0.2"></a-sphere>
+<a-sphere position="-1 1 0" color="white" radius="0.2"></a-sphere>
+<a-sphere position="0 -1 1" color="white" radius="0.2"></a-sphere>
+<a-sphere position="0 -1 -1" color="white" radius="0.2"></a-sphere>
+
+</a-marker>
+
+<a-entity camera></a-entity>
+
+</a-scene>
+</body>
+</html>
